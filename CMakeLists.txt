@@ -6,3 +6,7 @@ project(hello_cmake
     LANGUAGES C)
 
 add_executable(hello_cmake src/main.c)
+
+install (TARGETS ${PROJECT_NAME}
+    RUNTIME DESTINATION bin
+)
